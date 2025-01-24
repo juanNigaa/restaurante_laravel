@@ -1,0 +1,40 @@
+
+# Proyecto Restaurante Juan Andrés
+
+Este es un proyecto de gestión para un restaurante, realizado con Laravel. Permite gestionar productos, categorías, y usuarios (autenticación), y tiene dos secciones: pública (para usuarios sin sesión) y privada (para administradores autenticados).
+
+## Requisitos
+
+- **PHP 8.x** o superior
+- **Composer**: Para gestionar las dependencias de PHP.
+- **MySQL** o **MariaDB**: Para la base de datos.
+- **Node.js** y **npm**: Si deseas compilar los assets de frontend (CSS, JS).
+
+## Instalación
+
+### 1. **Clona o descarga el repositorio**:
+   Si tienes Git instalado, abre una terminal y ejecuta el siguiente comando para clonar el proyecto:
+   ```bash
+   git clone https://github.com/tu_usuario/RestauranteJuanAndres.git
+   cd RestauranteJuanAndres
+
+### 2. En caso de no tener el composer instalarlo 
+	composer install
+
+### 3. Revisar el archivo .env la base de datos en mi caso se llama restaurante, por lo que si le has puesto otro nombre en tú ordenador cambiaselo al que has puesto 
+	DB_CONNECTION=mysql
+	DB_HOST=127.0.0.1
+	DB_PORT=3306
+	DB_DATABASE=nombre_de_base_de_datos  # Nombre de la base de datos  
+
+
+### 4. En caso de no tener APP key en la linea 3, es decir "APP_KEY=base64:F7wMUHg0zfJ5cQaBzON1B538Nt2MJ/MI84Q4v98kLEs=" generar una con el comando:
+	php artisan key:generate
+
+
+### 5. Realizar las migraciones para llevarte las carpetas creadas a la base de datos
+	php artisan migrate
+
+### 6. La url quedaria de la siguiente manera:
+	http://localhost/RestauranteJuanAndres/laravel/public/
+	de esa manera podras ver la parte publica registrarte y entrar a la parte privada 

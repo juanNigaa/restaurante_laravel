@@ -37,4 +37,4 @@ Este es un proyecto de gestión para un restaurante, realizado con Laravel. Perm
 
 ### 6. La url quedaria de la siguiente manera:
 	http://localhost/RestauranteJuanAndres/laravel/public/
-	de esa manera podras ver la parte publica registrarte y entrar a la parte privada 
+	de esa manera podras ver la parte publica registrarte y entrar a la parte privada .
